@@ -1,1 +1,1 @@
-Material for the course "Quantum Logic", taught at the University of Minho.
+Material for the course "Interacção e Concorrência", taught at the University of Minho.
