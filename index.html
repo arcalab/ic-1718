@@ -59,39 +59,57 @@
 <div class="bs-component">
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Aims</h2>
+<h2>Objectivos</h2>
 
 <p>
-To become familiar with reactive systems, emphasising their concurrent composition and continuous interaction with their environment
-</p>
+ Este curso tem por objectivo o estudo de sistemas reactivos, com ênfase na sua composição concorrente e no controlo da interacção continuada com o ambiente.
 
 <p>
-To introduce techniques for (formal) specification, analysis and verification of reactive systems
+Serão introduzidas técnicas de especificação de propriedades, modelação, análise e verificação deste tipo de sistemas, assim como lógicas apropriadas.
+
+<p>
+O curso aborda, essencialmente, sistemas reactivos clássicos; serão brevemente mencionados sistemas com requisitos de resposta em tempo real e de reacção probabilística. 
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~-->
-<div id="programa"></div>
-<h2>Syllabus</h2>
+<h2>Resultados de Aprendizagem</h2>
 
 <ul>
-<li> <strong>Basic models for reactive systems  (state, behaviour, interaction, concurrency)</strong>
- <ul>
-  <li> Labelled transition system 
-  <li> Processes and behaviour
-  <li> Similarity and bisimilarity
-  <li> Variants:  real-time, probabilisitic and quantum transition systems
+  <li> 
+    Identificar as noções de interacção, sistema de transição e processo na modelação de sistemas computacionais complexos.
+  <li> 
+    Criar, analisar, comparar e transformar modelos de sistemas reactivos.
+  <li> 
+    Formular e analisar propriedades sobre esses modelos, captando num nível de abstração elevado, aspectos concretos da computação reactiva (por exemplo, situações de deadlock ou livelock, problemas de exclusão mútua e controlo de recursos, configurações de serviços móveis, etc.).
+  <li> 
+    Conhecer e utilizar ferramentas computacionais de suporte. Labelled transition system 
 </ul> 
-  <li> <strong> Process algebra </strong>
- <ul>
-  <li> CCS  
-  <li> mCRL2  
-</ul>
- <li> <strong> Logics for reactive systems </strong>
- <ul>
-  <li> Hennessy-Milner logic and its extensions
-  <li> Modal, hybrid and temporal logics
-  <li>     Specification and verification of logic constraints
-</ul>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="programa"></div>
+<h2>Programa</h2>
+
+<ul>
+<li> <strong> Introdução aos sistemas reactivos</strong>: estado, comportamento, interacção e concorrência
+<li> <strong>Sistemas de transição etiquetados </strong>
+<ul>
+  <li> Definições básicas 
+  <li> simulação e bissimulação; bissimilaridade.
+  <li> Variantes:  sistemas de tempo real, probabilísticos e quânticos.
+</ul> 
+<li> <strong> Álgebras de processos </strong>
+<ul>
+  <li> Acção, processo e comportamento.
+  <li> Modelação e cálculo de sistemas reactivos em CCS.
+  <li>Modelação e cálculo de sistemas reactivos em mCRL2.
+</ul> 
+<li> <strong> Lógicas para sistemas reactivos</strong>:
+<ul>
+  <li> Modalidade e lógica modal.
+  <li> Lógica de Hennessy-Milner e suas variantes.
+  <li> Equivalência modal e bissimilaridade.
+ <li>  Propriedades comportamentais e sua verificação em mCRL2
+</ul> 
 </ul>
 
 
@@ -100,27 +118,68 @@ To introduce techniques for (formal) specification, analysis and verification of
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~-->
 <div id="material"></div>
-<h2>Support</h2>
+<h2>Apoio</h2>
 
-<h5> Slides </h5>
+<h5> Slides (2017-18)</h5>
 <ul>
-<li>...</li>  
-
-<li><a href="slides/IeC1415-LTS1.pdf">
+<li><a href="slides/IeC1718-LTS1.pdf">
     Labelled Transition Systems 1</a>
+<li>...</li>  
 <!--
 <li class="faded"><a href="slides/QL-2-Logic.pdf">
     2: Background - Modal logics</a>
  -->
 </ul>
 
-<h5> Exercises  </h5>
-<!--
+<h5> Exercícios  </h5>
 <ul>
-<li><a href="material/tp1.pdf">
-    Primeiro trabalho - Axiomatização</a>
+<li>...</li>  
 </ul>
- -->
+
+
+<h5> Lições (versão 2014-15) </h5>
+<ul>
+  <li> <a href="lic/IC-Lic1.pdf">Lição 1 - Sistemas de Transição e Comportamento</a>
+  <li> <a href="lic/IC-Lic2.pdf">iLição 2 - Modelação de Processos</a>
+  <li> <a href="lic/IC-Lic3.pdf">Lição 3 - Cálculo de Processos</a>
+  <li> <a href="lic/IC-Lic4.pdf">Lição 4 - Estudo de Casos</a>
+  <li> <a href="lic/IC-Lic5.pdf">Lição 5 - Cálculo Pi</a>
+  <li> <a href="lic/IC-Lic6.pdf">Lição 6 - Lógicas para Processos</a>
+  <li> <a href="lic/IC-Lic7.pdf">Lição 7 - Estudo de Caso: Um Protocolo de Autenticação</a>
+</ul> 
+
+
+
+<h5> Bibliografia base </h5>
+<ul>
+
+<li>
+Luca Aceto, Anna Ingólfsdóttir, Kim G. Larsen, Jiri Srba. Reactive Systems: Modelling, Specification and Verification. CUP, 2007. <a href="http://www.cambridge.org/us/academic/subjects/computer-science/programming-languages-and-applied-logic/reactive-systems-modelling-specification-and-verification">
+    [livro]</a>
+    <div class="pdf"> <a class="pdf"
+       href="http://www.cs.ioc.ee/yik/schools/win2007/ingolfsdottir/sv-book-part1.pdf">
+    </a></div>
+  </li>
+
+<li>
+Jan Friso Groote, Mohammad Reza Mousavi. Modeling and Analysis of Communicating Systems. MIT Press, 2008.<a href="https://mitpress.mit.edu/index.php?q=books/modeling-and-analysis-communicating-systems">
+  [livro]</a>
+    <div class="pdf"> <a class="pdf"
+       href="http://www.win.tue.nl/~jfg/educ/2IW25/herfst2009/mcrl2-book.pdf">
+    </a></div>
+  </li>
+</ul>
+
+<h5> Bibliografia complementar </h5>
+<ul>
+
+<li>J. C. M. Baeten, T. Basten, M. A. Reniers. Process Algebra: Equational Theories of Communicating Processes. CUP, 2010. 
+  </li>
+<li>Robin Milner. Communicating and Mobile Systems: The Pi Calculus. CUP, 1999. 
+  </li>
+<li>Christel Baier, Joost-Pieter Katoen. Principles of Model Checking. MIT Press, 2008
+  </li>
+</ul>
 
 
 <h5> Links </h5>
@@ -130,51 +189,32 @@ To introduce techniques for (formal) specification, analysis and verification of
 </ul>
 
 
-<h5> References </h5>
-<ul>
-
-<li><a href="http://www.cambridge.org/us/academic/subjects/computer-science/programming-languages-and-applied-logic/reactive-systems-modelling-specification-and-verification">
-    Reactive Systems: Modelling, Specification and Verification</a>
-    <div class="pdf"> <a class="pdf"
-       href="http://www.cs.ioc.ee/yik/schools/win2007/ingolfsdottir/sv-book-part1.pdf">
-    </a></div>
-  </li>
-
-<li><a href="https://mitpress.mit.edu/index.php?q=books/modeling-and-analysis-communicating-systems">
-    Modeling and Analysis of Communicating Systems</a>
-    <div class="pdf"> <a class="pdf"
-       href="http://www.win.tue.nl/~jfg/educ/2IW25/herfst2009/mcrl2-book.pdf">
-    </a></div>
-  </li>
-</ul>
-
-
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~-->
 <div id="funcionamento"></div>
-<h2>Pragmatics</h2>
+<h2>Funcionamento</h2>
 
 <img class="bioPhoto" src="http://arca.di.uminho.pt/extra/img/photos/lsb.jpg">
 
-<h5><a name="Docente"></a> Lecturer </h5>
+<h5><a name="Docente"></a> Docente </h5>
 <ul><li>
 <a href="http://www.di.uminho.pt/~lsb">Luís Soares Barbosa</a>
 </li></ul>
 
-<h5><a name="Avalia_o"></a> Avaliação </h5>
+<h5><a name="Avaliação"></a> Avaliação </h5>
 
 <ul>
-<li> Training assignments (2, 15% each): 23 March and 18 May
-<li>  Written test (70%): 1 June1 (30%)
-<li> NOTE: Final mark equal to or above 19 require oral defence
+<li> Teste prático de caracter laboratorial (2, 15% cada): 23 Março e 18 Maio
+<li> Prova individual escrita (70%): 1 June 
+<li> As notas finais superiores ou iguais a 19 valores terão que ser defendidas em prova oral.
 </ul>
 
-<h5><a name="Contact
+<h5><a name="Contacto"></a> Contacto </h5>
+
 <ul>
-  <li> Schedule: Wed 10-12 (confirmation by email)
+  <li> Atendimento: Quarta 10-12 (por marcação)
   <li> Email: lsb arroba di ponto uminho ponto pt
+  <li> Última actualização: 2018.02.08
 </ul>
-
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~-->
 </div> <!-- bs-component -->
@@ -184,7 +224,7 @@ To introduce techniques for (formal) specification, analysis and verification of
 
 <div class="panel-footer" id="wrapper-footer">
 <div id="footer">
-Copyright 2017 – Luís Soares Barbosa 
+2018.02.09
 </div>
 </div>
 
